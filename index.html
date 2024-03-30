@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ითამაშე სპორტი, EGT სლოტები, UFO, კაზინო, სამაგიდო თამაშები / Play sports, EGT slots, UFO, casino, board games / Играй в Спорт, слотами EGT, УФО, Казино, Настольные игры."
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Crocobet - Sports Betting and Casino</title>
+    <style type="text/css">
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #00141e;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .content__inner h1 {
+        font-size: 2.4375em;
+        margin-bottom: 16px;
+      }
+      .content__inner h2 {
+        font-size: 1.9375em;
+        margin: 16px 0;
+      }
+      p + p {
+        margin-top: 16px;
+      }
+      .content {
+        padding: 8px 0;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header {
+        background-color: #001e28;
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: relative;
+      }
+      .menu__burger {
+        width: 70px;
+        height: 60px;
+        background-color: #161d37;
+        z-index: 11;
+      }
+      .menu-burger__input,
+      .menu-burger__label {
+        display: none;
+      }
+      .btn-box--mobile {
+        display: none;
+      }
+      .menu__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .menu,
+      .menu-burger__label span {
+        left: 0;
+      }
+      .menu-burger__label {
+        cursor: pointer;
+      }
+      .menu {
+        position: absolute;
+        top: 0px;
+        left: -15px;
+        padding: 80px 8px 16px 8px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.32), 0 4px 8px rgba(0, 0, 0, 0.24);
+        width: 280px;
+        background-color: #00141e;
+        z-index: 10;
+        transform: translateY(-200%);
+        transition: all 0.5s;
+      }
+      .menu-burger__label span,
+      .menu-burger__label::after,
+      .menu-burger__label::before {
+        height: 2px;
+        border-radius: 2px;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+      }
+      .menu-burger__label,
+      .menu-burger__label span {
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+      }
+      .menu-burger__input {
+        position: relative;
+        opacity: 0;
+        display: block;
+      }
+      .menu-burger__label {
+        position: absolute;
+        left: 0px;
+        top: 37px;
+        width: 24px;
+        height: 16px;
+        z-index: 11;
+      }
+      .menu-burger__label::after,
+      .menu-burger__label::before,
+      .menu-burger__label span {
+        content: '';
+        right: 0;
+      }
+      .menu-burger__label::after {
+        top: 0;
+      }
+      .menu-burger__label::before {
+        bottom: 0;
+      }
+      .menu-burger__input:checked + .menu-burger__label + .menu {
+        transform: translateY(0);
+      }
+      .menu__item {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        transition: all 0.4s;
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(47, 100, 117, 0.3);
+      }
+      .menu__item svg {
+        margin-right: 10px;
+      }
+      .menu__item:hover {
+        transform: translateX(5px);
+      }
+      .menu__link {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #96a5b8;
+      }
+      .logo {
+        z-index: 11;
+      }
+      .btn__link {
+        padding: 6px 11px 8px 11px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 16px;
+        color: #fff;
+        border: none;
+        transition: all 0.5s;
+      }
+      .log-in {
+        text-transform: uppercase;
+        background-color: transparent;
+      }
+      .registration {
+        background-color: #1caf4b;
+        color: #fff;
+      }
+      .registration:hover {
+        background-color: #25fca8;
+        box-shadow: none;
+      }
+      .main {
+        padding: 161px 0 102px;
+        background-image: url('images/main-img.webp');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main__text {
+        font-size: 30px;
+        line-height: 1.4;
+      }
+      .main__text-title {
+        color: #f6da24;
+        font-size: 105px;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+      .main__text--yelov {
+        color: #f6da24;
+      }
+      .main__btn {
+        padding: 14px 74px;
+        transition: all 0.5s;
+        background-color: #1caf4b;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 1000px;
+        border: none;
+        margin-top: 20px;
+      }
+      .main__btn--small {
+        font-size: 10px;
+      }
+      .main__btn:hover {
+        transform: scale(1.1);
+      }
+      .title-2 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .popular {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 20px;
+      }
+      .content__title-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .popular__item {
+        cursor: pointer;
+      }
+      .popular__link {
+        display: block;
+        height: 100%;
+      }
+      .popular__img {
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+      }
+      .popular__img img {
+        transition: all 0.5s;
+      }
+      .popular__img:hover img {
+        transform: scale(1.1);
+      }
+      .more-games {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        display: inline-block;
+      }
+      .more-games:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        padding: 50px 0;
+      }
+      .footer__top {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding-bottom: 32px;
+      }
+      .footer__top-link {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        padding: 10px 24px;
+        border-radius: 100px;
+        background-color: #0f2d37;
+        border: 1px solid rgba(47, 100, 117, 0.5);
+      }
+      .language__wrapp {
+        position: relative;
+        min-width: 73px;
+      }
+      .language__btn {
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        padding-right: 30px;
+      }
+      .language__btn::after {
+        content: '>';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        right: 10px;
+      }
+      .language__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 120%;
+        z-index: 1;
+        list-style: none;
+        padding: 8px;
+        margin: 0;
+        backdrop-filter: blur(5px);
+        min-width: 150px;
+        max-height: 300px;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE и Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .language__list-item {
+        margin-bottom: 10px;
+        padding: 10px 24px;
+        border-radius: 8px;
+        background-color: #0f2d37;
+        border: 1px solid rgba(47, 100, 117, 0.5);
+        text-align: center;
+      }
+      .language__list-item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .language__list-link {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+      }
+      .language__wrapp input:checked ~ .language__list {
+        display: block;
+      }
+      .footer__nav {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        border-top: 1px solid rgba(88, 92, 131, 0.3);
+        border-bottom: 1px solid rgba(88, 92, 131, 0.3);
+        padding: 15px 0;
+      }
+      .footer__list {
+        list-style: none;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+      .footer__nav-title {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        border-bottom: 3px solid #189541;
+      }
+      .footer__list-item {
+        color: #d0d2d7;
+      }
+      .footer__text {
+        color: #a2a5af;
+        font-size: 14px;
+        padding-top: 15px;
+      }
+      .footer__bottom {
+        text-align: center;
+        padding-top: 15px;
+      }
+      .footer__age {
+        width: 40px;
+        height: 40px;
+      }
+      .login-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: #001e28;
+        padding: 10px 0;
+        position: sticky;
+        bottom: 0;
+      }
+      .login-bar__link {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 160px;
+        height: 49px;
+        border-radius: 30px;
+        background-color: #0f2d37;
+        text-align: center;
+        padding-top: 14px;
+      }
+      .login-bar__link--green {
+        background-color: #189541;
+      }
+      @media (max-width: 768px) {
+        .main {
+          background-image: url('images/main-img-768.webp');
+        }
+        .popular {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .footer__nav {
+          grid-template-columns: 100%;
+        }
+      }
+      @media (max-width: 465px) {
+        .content {
+          padding-bottom: 0;
+        }
+        .content__inner h1 {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+        .content__inner h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        .header__inner {
+          padding-left: 50px;
+        }
+        /* .logo__img {
+          width: 122px;
+          height: 27px;
+        } */
+        /* .menu-burger__label {
+          left: 10px;
+          top: 33px;
+        } */
+        .menu {
+          width: 100%;
+        }
+        .main {
+          padding: 200px 8px 30px;
+          background-image: url('images/main-img-320.webp');
+        }
+        .main__text {
+          font-size: 14px;
+        }
+        .main__text-title {
+          font-size: 50px;
+        }
+        .main__btn {
+          font-size: 16px;
+        }
+        .main__btn--small {
+          font-size: 10px;
+        }
+        .popular {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <input class="menu-burger__input" type="checkbox" id="burger" />
+          <label class="menu-burger__label" for="burger"><span></span></label>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_0" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">SPORT</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_1" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">LIVE</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_5" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">Slots</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_4" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">casino</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_3" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">games</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_2" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">p2p</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_6" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">poker</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-fantasy" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">fantasy</a>
+              </li>
+              <li class="menu__item">
+                <svg class="menu-icon" width="20" height="20">
+                  <use xlink:href="images/sprite.svg#icon-svg-gobbler_7" fill="#96A5B8"></use>
+                </svg>
+                <a class="menu__link" href="go">promos</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo" href="https://crocobet.de">
+            <img class="logo__img" src="images/logo.svg" alt="logo" width="60" height="46" />
+          </a>
+          <div class="btn-box header__btn-box">
+            <a class="btn__link log-in" href="go">Log in</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="main">
+        <p class="main__text">WILLKOMMENSANGEBOT</p>
+        <p class="main__text main__text-title">€450</p>
+        <p class="main__text main__text--yelov">+ 250 Freispiele</p>
+        <a class="main__btn" href="go">Jetzt registrieren</a>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <h1>Spinanga Casino 🇩🇪</h1>
+          <p>
+            Das Spinanga Online-Casino hebt sich von anderen bekannten Plattformen durch seine einzigartigen Angebote, sein
+            interessantes Design und seinen Wunsch, sich weiterzuentwickeln und die Spieler mit neuen Möglichkeiten zu begeistern,
+            ab. Spinanga Casino folgt seinem eigenen Entwicklungspfad und beschenkt die Benutzer mit interessanten Boni und
+            Promotionen und bietet das höchste Niveau an Service.
+          </p>
+          <p>
+            Spinanga gibt Spielern die Möglichkeit, die Unterhaltung ihrer Wahl zu wählen und Zeit mit Komfort und Vertrauen in
+            die Sicherheit der persönlichen Daten zu verbringen. In unserer Rezension finden Sie viele nützliche Informationen
+            über das Casino und die wichtigsten Aspekte, die Ihnen helfen werden, den Prozess des Spielens noch angenehmer und
+            interessanter zu machen.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__title-box">
+            <h2 class="title-2">
+              <svg class="menu-icon" width="40" height="40">
+                <use xlink:href="images/sprite.svg#icon-svg-gobbler_5" fill="#ffffff"></use>
+              </svg>
+              <span>Slots</span>
+            </h2>
+            <a class="more-games" href="go">ALLE ANZEIGEN</a>
+          </div>
+          <div class="popular">
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/408.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/46.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/558.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/18.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/407.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/810.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/19234.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/363.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/1177.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/1336.webp" width="100%" height="100%" loading="lazy" alt="slot image" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <h2>Casino-Schnittstelle und Registrierung</h2>
+        <p>
+          Die Erstellung eines Kontos ist einfach - dieser Vorgang wird buchstäblich 5 Minuten Ihrer Zeit in Anspruch nehmen. Die
+          Schnittstelle der Plattform ist einfach zu navigieren, so dass die Spieler schnell die notwendigen Abschnitte zu finden
+          und erhalten Informationen in ein paar Klicks. Die Anpassungsfähigkeit der Plattform an verschiedene Geräte verdient
+          besondere Aufmerksamkeit, die Seite sieht sowohl auf mobilen Geräten als auch auf PCs gleich aus.
+        </p>
+        <p>
+          <b>Der Registrierungsprozess bei Spinanga Casino umfasst ein paar einfache Schritte:</b>
+        </p>
+        <ol>
+          <li>
+            Die Erstellung eines persönlichen Kontos beginnt mit einem Login und einem Passwort. Dieser Punkt ist wichtig für die
+            weitere Interaktion mit der Plattform. Das Passwort muss sicher sein, damit Ihre Daten geschützt sind.
+          </li>
+          <li>
+            In der zweiten Phase der Registrierung müssen Sie dem Dienst Ihre persönlichen Daten zur Verfügung stellen: Name,
+            Geburtsdatum und Kontakte. Alle Informationen werden für die Verifizierung verwendet.
+          </li>
+          <li>
+            Als nächstes müssen Sie eine gültige E-Mail-Adresse angeben. An diese Adresse werden Sie ein Schreiben zur Bestätigung
+            Ihrer Anmeldung erhalten.
+          </li>
+          <li>Verifizierung: In diesem Stadium müssen Sie einen Scan von Dokumenten oder deren Fotos vorlegen.</li>
+        </ol>
+        <p>
+          Das Interface von Spinanga Casino ist angenehm für das Auge. Spinanga ist besonders stolz auf seine einzigartige
+          Designlösung und die einfache Navigation. Selbst ein Neuling in der Welt der Glücksspielunterhaltung findet sich im
+          virtuellen Raum von Spinanga schnell zurecht.
+        </p>
+        <h2>Sortiment der Spiele im Online-Casino Spinanga</h2>
+        <p>
+          Spinanga ist stolz auf seine Spielothek und versucht, diese ständig mit neuen und interessanten Spielen zu erweitern.
+          Atemberaubende Grafiken und Zuverlässigkeit sind garantiert, da das Casino nur mit den besten Softwareentwicklern und
+          -betreibern zusammenarbeitet.
+        </p>
+        <p>
+          <b>Zu den Partnern der Plattform als Spielbetreiber gehören:</b>
+        </p>
+        <ul>
+          <li>
+            <b>NetEnt</b> - ein bekannter Entwickler, der viele Spielautomaten unterstützt und diese mit einer unübertroffenen
+            Grafikqualität ausstattet;
+          </li>
+          <li>
+            <b>Evolution Gaming</b> - ein marktführender Softwareentwickler, der Software für Live-Casinos und realistische Spiele
+            in einem realistischen Format anbietet;
+          </li>
+          <li>
+            <b>Microgaming</b> - ein Anbieter, der für sein umfangreiches Portfolio, einschließlich progressiver Jackpots, bekannt
+            ist;
+          </li>
+          <li>
+            <b>Play'n GO</b> - ein ebenso berühmtes Unternehmen, das seinen Nutzern einzigartige und schöne Slots mit einem
+            innovativen Ansatz bietet.
+          </li>
+        </ul>
+        <p><b>Das Casino bietet den Spielern die folgenden Bereiche von Spielen:</b></p>
+        <ol>
+          <li>
+            <b>Spielautomaten.</b> Diese Kategorie umfasst Spiele, die sehr beliebt sind: Video-Slots, klassische Varianten, sowie
+            progressive Jackpots.
+          </li>
+          <li><b>Live-Kasino.</b> Das Live-Format bietet ungewöhnliche Spiele: Blackjack, Roulette, Baccarat und andere.</li>
+          <li>
+            <b>Tischunterhaltung.</b> Dieses Format ist für diejenigen geeignet, die klassische Unterhaltung bevorzugen. Hier
+            finden Sie verschiedene Arten von Roulette, Blackjack, Baccarat und Poker.
+          </li>
+          <li>
+            <b>Besondere Spiele.</b> Hier erwarten Sie nicht alltägliche Angebote: verschiedene Lotterien, Keno, Bingo und andere
+            Vergnügen für diejenigen, die den Nervenkitzel suchen.
+          </li>
+        </ol>
+        <p>
+          Das Casino ergänzt seine Spielesammlung regelmäßig um neue Spiele und bietet seinen Nutzern einen endlosen Strom an
+          spannender Unterhaltung.
+        </p>
+        <h2>Bonusangebote und promotionen</h2>
+        <p>
+          Boni sind ein mächtiges Instrument, das dem Casino hilft, neue Spieler anzuziehen und ihr Interesse zu erhalten. Von den
+          ersten Momenten der Interaktion mit der Spinanga-Plattform an werden die Nutzer mit einem Willkommensbonus konfrontiert,
+          der Freispiele für beliebte Spielautomaten oder Bargeldboni ohne Einzahlung umfassen kann. Dieser angenehme
+          Willkommensgruß gibt den Spielern die Möglichkeit, ohne Verluste oder Investitionen in die Welt des Glücksspiels
+          einzutauchen.
+        </p>
+        <p>
+          <b>Spinanga bietet seinen Nutzern laufend die folgenden Aktionen und Boni an:</b>
+        </p>
+        <ul>
+          <li>
+            <b>Wöchentliche Boni.</b> Geschenkfonds ermöglichen es den Spielern, weniger persönliches Geld auszugeben und zum Spaß
+            zu spielen;
+          </li>
+          <li>
+            <b>Freespins für Aktivität.</b> Aktive Nutzer erhalten Freispiele im Rahmen von Sonderaktionen und können neue Slots
+            ohne Risiko ausprobieren;
+          </li>
+          <li>
+            <b>VIP-Boni.</b> Diese Art von Bonus ist für die aktivsten Spieler verfügbar. In dieser Kategorie werden exklusive
+            Boni angeboten.
+          </li>
+        </ul>
+        <p>
+          Spinanga Casino legt Wert auf seinen guten Ruf und überwacht sorgfältig die Transparenz der Einsatzbedingungen und
+          kontrolliert den Prozess, damit keine versteckten Anforderungen auftauchen. Dieser Ansatz macht den Prozess transparent
+          und das Ergebnis erfreulich.
+        </p>
+        <h2>Treueprogramm, Stufen und Bedingungen</h2>
+        <p>
+          Das Treueprogramm von Spinanga ist ein Paradebeispiel dafür, wie das Casino seine regelmäßigen Nutzer schätzt und
+          versucht, sie für ihre Aktivitäten zu belohnen. Das Punktesystem ermöglicht es den Spielern, ihre Punkte gegen echtes
+          Geld einzutauschen oder sie als Zahlungsmittel für Unterhaltung zu verwenden.
+        </p>
+
+        <p>
+          Die Bedingungen des Programms sind so transparent und klar wie möglich. Für jeden getätigten Einsatz erhält der Spieler
+          eine bestimmte Anzahl von Punkten, die zusammengezählt und in Boni umgewandelt werden.
+        </p>
+        <p><b>Das Treueprogramm umfasst die folgenden Stufen:</b></p>
+        <ol>
+          <li>
+            <b>Anfangsstufe.</b> Diese Stufe steht allen Spielern nach der Registrierung offen. Die Nutzer haben Zugang zu
+            Willkommens- und Standardboni sowie die Möglichkeit, an allen Casino-Aktionen teilzunehmen.
+          </li>
+          <li>
+            <b>Fortgeschritten.</b> Diese Stufe wird nach dem Sammeln einer bestimmten Anzahl von Punkten freigeschaltet. Die
+            Spieler erhalten loyalere Bedingungen für den Umtausch von Punkten, höhere Boni und Zugang zu speziellen Promotionen.
+          </li>
+          <li>
+            <b>VIP-Stufe.</b> Diese Stufe wird nur für aktive Nutzer geöffnet. Der Spieler erhält eine Reihe von Möglichkeiten in
+            Form von einzigartigen Boni, schnellem Service, Teilnahme an interessanten Veranstaltungen sowie die Möglichkeit, mit
+            einem persönlichen Manager zu kommunizieren.
+          </li>
+        </ol>
+        <p>
+          Die Möglichkeiten des Programms werden ständig erweitert, und die Bedingungen werden überarbeitet. Auf diese Weise
+          können Sie ein großes Publikum erreichen und ihm die Möglichkeit geben, den Prozess zu genießen.
+        </p>
+        <h2>Einzahlungssystem und Auszahlungsmethoden</h2>
+        <p>
+          Spinanga Casino bemüht sich um ein sicheres System des Geldumlaufs und bietet seinen Spielern eine breite Palette von
+          Zahlungsmethoden.
+        </p>
+        <p><b>Jetzt sind die folgenden Ein- und Auszahlungsmethoden verfügbar:</b></p>
+        <ul>
+          <li>Bankkarten: MasterCard, Visa;</li>
+          <li>Banküberweisungen;</li>
+          <li>E-Wallets: Skrill, WebMoney, Neteller;</li>
+          <li>Zahlungssysteme: ecoPayz, Paysafecard;</li>
+          <li>Kryptowährungen: Bitcoin, USDT und andere.</li>
+        </ul>
+        <p>
+          Weitere Informationen über Transaktionen können auf der offiziellen Spinanga-Website gefunden werden. Das Casino
+          versichert den Spielern, dass es fortschrittliche Technologie zur Verschlüsselung von Daten verwendet und garantiert,
+          dass niemand einen Vorteil daraus ziehen kann.
+        </p>
+        <h2>Spinanga Casino-Lizenzierung</h2>
+        <p>
+          Eine Lizenz ist eine Garantie dafür, dass das Casino im Einklang mit dem Gesetz arbeitet und die Rechte und Pflichten
+          der Glücksspielindustrie respektiert. Spinanga hat sich als Plattform mit bunten, interessanten Inhalten und einem
+          ausgezeichneten Ruf etabliert. Das Casino hat seit seiner Gründung stets hohe Standards erfüllt und ist legal tätig.
+        </p>
+        <p>
+          Spinanga verfügt über eine Lizenz der Glücksspielkommission von Curaçao. Dieser Punkt ist wichtig, da die
+          Glücksspielbehörde das Casino ständig überprüft und kontrolliert. Wir können mit Sicherheit sagen, dass alle Spiele
+          sicher und fair sind. Dank der Lizenz kann Spinanga in vielen Ländern legal operieren und seine Spieler weiterhin mit
+          Qualitätsinhalten erfreuen.
+        </p>
+        <h2>Kundenbetreuung</h2>
+        <p>
+          Das Rückmeldung der Casino-Spieler ist sowohl für den Kunden als auch für die Plattform sehr wichtig. Auch in dieser
+          Hinsicht hält Spinanga eine hohe Qualität der Dienstleistungen aufrecht. Sie können die Betreiber zu jeder Tageszeit und
+          an jedem Tag der Woche kontaktieren.
+        </p>
+        <p>
+          <b>Die folgenden Feedback-Methoden sind bei Spinanga verfügbar:</b>
+        </p>
+        <ul>
+          <li><b>Online-Chat:</b> direkt auf der Casino-Website verfügbar und garantiert eine schnelle Antwort;</li>
+          <li><b>E-Mail:</b> eine Kontaktmethode für komplexere Anfragen, die die Vorlage von Dokumenten erfordern;</li>
+          <li><b>Telefon:</b> eine Support-Methode für diejenigen, die den Live-Chat bevorzugen.</li>
+        </ul>
+        <p>Sie können auch den Abschnitt "Häufig gestellte Fragen" konsultieren, um Antworten auf Ihre Fragen zu erhalten.</p>
+        <h2>Mobiles Casino und Apps</h2>
+        <p>
+          Spinanga Casino geht mit der Zeit und versucht, seinen Spielern ein Maximum an Komfort und Funktionalität zu bieten. Das
+          adaptive Design der Website ermöglicht es Ihnen, die Seiten von jedem Gerät aus zu betrachten, ohne dass das Bild
+          verzerrt wird, und bietet die höchste Qualität der Grafiken.
+        </p>
+        <p>
+          Spinanga kümmert sich um die Liebhaber von mobilen Apps und speziell für sie hat das Casino Anwendungen für Android und
+          iOS entwickelt. Sie können sie jeweils von der offiziellen Casino-Website und im App Store herunterladen. Die Plattform
+          bietet eine stabile Arbeit mit den Anwendungen und helle optimale Grafiken.
+        </p>
+        <p>
+          Über die mobilen Apps haben die Spieler Zugang zu allen wichtigen Funktionen und einer breiten Palette von Spielen
+          führender Softwareentwickler. Spinanga-Apps ermöglichen es den Nutzern, ihre Lieblingsspiele überall und jederzeit zu
+          genießen.
+        </p>
+        <h2>Gewährleistung von Sicherheit und Fair Play</h2>
+        <p>
+          Sicherheit und Datenschutz sind die wichtigsten Faktoren für die Fairness der Spielprozesse und das Vertrauen der
+          Spieler. Die Plattform widmet diesen Themen höchste Aufmerksamkeit.
+        </p>
+        <p><b>Wege, um die Sicherheit und Fairness des Spiels zu gewährleisten:</b></p>
+        <ul>
+          <li>
+            <b>SSL-Verschlüsselung:</b> Alle in die Datenbank des Casinos eingegebenen Benutzerdaten werden mit Hilfe moderner
+            Verschlüsselungstechnologien geschützt. Dank dieses Ansatzes wird die Möglichkeit des Datenverlustes und des Zugriffs
+            durch Dritte verhindert;
+          </li>
+          <li>
+            <b>Bewährte Softwareentwickler:</b> Die Plattform arbeitet nur mit bekannten und bewährten Softwareentwicklern
+            zusammen und verwendet zertifizierte Zufallszahlengeneratoren. Dies trägt dazu bei, unverfälschte Ergebnisse auf
+            höchstem Niveau zu erhalten;
+          </li>
+          <li>
+            <b>Unabhängige Prüfungen:</b> Das Casino wird regelmäßig von unabhängigen Prüforganisationen geprüft und hält somit
+            hohe Standards für faires Spiel ein;
+          </li>
+          <li>
+            <b>Verantwortungsbewusstes Spielen:</b> Spinanga kümmert sich um seine Kunden und stellt alle Werkzeuge zur Verfügung,
+            um Spielsucht zu kontrollieren und zu beseitigen;
+          </li>
+          <li>
+            <b>Benutzerverifizierung:</b> Die Verifizierungspolitik verhindert, dass minderjährige Benutzer spielen und minimiert
+            das Risiko von Betrug auf der Plattform.
+          </li>
+        </ul>
+        <p>
+          Mit diesen Instrumenten bietet Spinanga ein hohes Maß an Schutz der persönlichen Daten und garantiert die Transparenz
+          der Abläufe.
+        </p>
+        <h2>Verantwortungsvolles Spielen</h2>
+        <p>
+          Spinanga Casino ist sich der Bedeutung eines gesunden Spielerlebnisses bewusst und bietet seinen Spielern alle
+          Möglichkeiten, die Sucht zu bekämpfen. Die Plattform implementiert verschiedene Maßnahmen zum Schutz der Spieler und zur
+          Minimierung negativer Folgen.
+        </p>
+        <p>
+          <b>Möglichkeiten zur Umsetzung von verantwortungsvollem Spielen bei Spinanga:</b>
+        </p>
+
+        <ul>
+          <li>
+            <b>Festlegung von Einzahlungslimits:</b> Die Nutzer können ihr eigenes Einzahlungslimit festlegen und so übermäßige
+            Ausgaben kontrollieren;
+          </li>
+          <li>
+            <b>Selbstausschluss vom Spiel:</b> Das Casino bietet die Möglichkeit, sich für eine bestimmte Zeit oder dauerhaft vom
+            Spiel auszuschließen;
+          </li>
+          <li>
+            <b>Zeitlimit-Erinnerungen:</b> Die Benutzer können Zeitlimits festlegen und erhalten regelmäßige Benachrichtigungen
+            über die im Spiel verbrachte Zeit;
+          </li>
+          <li>
+            <b>Links zu professioneller Hilfe:</b> Spinanga bietet alle notwendigen Informationen über Spielsucht und die Kontakte
+            zu Organisationen, die sich auf die Unterstützung von Menschen mit Spielsucht spezialisiert haben.
+          </li>
+        </ul>
+        <p>
+          Spinanga Casino kümmert sich um die Gesundheit und den Seelenfrieden seiner Benutzer und erinnert sie regelmäßig an die
+          Regeln des verantwortungsvollen Spielens.
+        </p>
+        <h2>Fazit</h2>
+        <p>
+          Spinanga Casino ist nicht nur ein Casino, sondern ein Ökosystem und eine lebendige Welt in der virtuellen Realität. Das
+          Casino bietet seinen Spielern großzügige Boni, regelmäßige Promotionen und die neuesten Spiele, die auf vielen anderen
+          Seiten nicht verfügbar sind. Spinanga versucht, alle Aspekte abzudecken, die das Spiel zu einer interessanten und vor
+          allem sicheren Reise machen.
+        </p>
+        <p>
+          Die Zusammenarbeit mit fortschrittlichen Softwareanbietern ermöglicht es der Plattform, die Qualität der Grafiken und
+          Inhalte immer auf dem neuesten Stand zu halten.
+        </p>
+        <p>
+          Dem Thema Sicherheit und Schutz persönlicher Daten wird bei Spinanga besondere Aufmerksamkeit gewidmet, was durch den
+          Einsatz effektiver moderner Datenverschlüsselungstechnologien und einer strengen Datenschutzpolitik bestätigt wird. Das
+          Casino kümmert sich um die psychische Gesundheit der Nutzer und informiert über die Regeln des verantwortungsvollen
+          Spielens.
+        </p>
+        <p>
+          Spinanga ist eine kleine Welt der Unterhaltung, die für jeden zugänglich ist. Lebendige Emotionen, große Gewinne und
+          unvergessliches Vergnügen warten hier auf Sie.
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <a class="footer__top-link" href="go">
+              <span>Write Us </span>
+            </a>
+            <div class="language__wrapp">
+              <input type="checkbox" id="toggle" hidden />
+              <label for="toggle" class="language__btn footer__top-link">DE</label>
+              <ul class="language__list">
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> EN </a>
+                </li>
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> FR </a>
+                </li>
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> IT </a>
+                </li>
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> PL </a>
+                </li>
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> ES </a>
+                </li>
+                <li class="language__list-item">
+                  <a class="language__list-link" href="#"> NL </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">ABOUT US</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="go">General rules</a></li>
+                <li class="footer__list-item"><a href="go">Sport rules</a></li>
+                <li class="footer__list-item"><a href="go">Casino regulations</a></li>
+                <li class="footer__list-item"><a href="go">Restricted Countries</a></li>
+                <li class="footer__list-item"><a href="go">18+</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <p class="footer__nav-title">Personal Information</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="go">Verification </a></li>
+                <li class="footer__list-item"><a href="go">Change password</a></li>
+                <li class="footer__list-item"><a href="go">Security options</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer__bottom">
+            <svg width="40" height="40">
+              <use xlink:href="images/sprite.svg#age" fill="#e8fffe"></use>
+            </svg>
+            <p class="footer__text">Spinanga</p>
+            <p class="footer__text">
+              Gambling can be addictive. Play responsibly. Spinanga only accepts customers over 18 years of age.
+            </p>
+            <p class="footer__text">2024 © Spinanga.com All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="login-bar">
+      <a class="login-bar__link login-bar__link--green" href="go">register</a>
+      <a class="login-bar__link" href="go">login</a>
+    </div>
+  </body>
+</html>
