@@ -54,7 +54,7 @@
         font-size: 1.9375em;
         margin: 16px 0;
       }
-      p + p {
+      .content p + p {
         margin-top: 16px;
       }
       .content {
@@ -76,15 +76,9 @@
       .header__inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         padding: 10px 0;
         position: relative;
-      }
-      .menu__burger {
-        width: 70px;
-        height: 60px;
-        background-color: #161d37;
-        z-index: 11;
+        min-height: 67px;
       }
       .menu-burger__input,
       .menu-burger__label {
@@ -135,7 +129,6 @@
       .menu-burger__input {
         position: relative;
         opacity: 0;
-        display: block;
       }
       .menu-burger__label {
         position: absolute;
@@ -182,6 +175,13 @@
       }
       .logo {
         z-index: 11;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .header__btn-box {
+        margin-left: auto;
       }
       .btn__link {
         font-size: 14px;
@@ -550,9 +550,9 @@
     </header>
     <section class="content">
       <div class="main">
-        <p class="main__text">WILLKOMMENSANGEBOT</p>
-        <p class="main__text main__text-title">€450</p>
-        <p class="main__text main__text--yelov">+ 250 Freispiele</p>
+        <div class="main__text">WILLKOMMENSANGEBOT</div>
+        <div class="main__text main__text-title">€450</div>
+        <div class="main__text main__text--yelov">+ 250 Freispiele</div>
         <a class="main__btn" href="go">Jetzt registrieren</a>
       </div>
     </section>
